@@ -1,4 +1,4 @@
-<!doctype html><html lang="ar" dir="rtl" translate="no" class="notranslate"><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-EB+Topo1bB1rwnf2tdmr4sA7wk+t3n/Z05XL5qbccIY='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests"><meta name="referrer" content="strict-origin-when-cross-origin"><meta name="google" content="notranslate"><meta name="description" content="الحضرامي · El Hadramy — صفحة شخصية من نواكشوط: نبذة وتطبيقات، بالعربية والفرنسية والإنجليزية."><link rel="icon" type="image/png" href="img/mark.png"><link rel="apple-touch-icon" href="img/mark.png"><meta property="og:title" content="الحضرامي · El Hadramy"><meta property="og:description" content="صفحة شخصية من نواكشوط — Page personnelle depuis Nouakchott — A personal page from Nouakchott."><meta property="og:image" content="https://www.elhadramy.com/img/logo.png"><meta property="og:url" content="https://www.elhadramy.com/"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#061318;color:#e8f0ef}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><title>الحضرامي</title></head><body>
+<!doctype html><html lang="ar" dir="rtl" translate="no" class="notranslate"><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-444DlQ/byQoUKpBmW6KgCuuGZ24936Lbxy/rVwptH48='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests"><meta name="referrer" content="strict-origin-when-cross-origin"><meta name="google" content="notranslate"><meta name="description" content="الحضرامي · El Hadramy — صفحة شخصية من نواكشوط: نبذة وتطبيقات، بالعربية والفرنسية والإنجليزية."><link rel="icon" type="image/png" href="img/mark.png"><link rel="apple-touch-icon" href="img/mark.png"><meta property="og:title" content="الحضرامي · El Hadramy"><meta property="og:description" content="صفحة شخصية من نواكشوط — Page personnelle depuis Nouakchott — A personal page from Nouakchott."><meta property="og:image" content="https://www.elhadramy.com/img/logo.png"><meta property="og:url" content="https://www.elhadramy.com/"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#061318;color:#e8f0ef}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><title>الحضرامي</title></head><body>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -94,6 +94,14 @@ html:not([lang="ar"]) h2{letter-spacing:-.03em}
 .idea .status{font-size:.85rem}
 .art .meta{color:var(--tide);font-size:.85rem}
 .art .btn{justify-self:start;margin-top:8px}
+.pfilt{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 24px}
+.pfilt button{font:inherit;font-size:.85rem;border:1px solid var(--rule);background:var(--swell);color:var(--foam);padding:6px 14px;border-radius:999px;cursor:pointer}
+.pfilt button[aria-pressed="true"]{background:var(--beam);color:var(--abyss);border-color:var(--beam)}
+.post .meta{color:var(--tide);font-size:.85rem}
+.post p{font-size:1rem;line-height:1.8}
+.post a.src{color:var(--tide);font-size:.9rem;text-decoration:none;justify-self:start}
+.post a.src:hover{text-decoration:underline}
+.pmore{margin-top:24px}
 
 /* channel */
 .channel{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px;padding:26px 30px;border-radius:24px;
@@ -184,6 +192,13 @@ footer .row{padding-block:20px 30px;color:var(--mist);font-size:.85rem}
     </ul>
   </div></section>
 
+  <section id="posts" hidden><div class="wrap">
+    <h2 id="posts_h">منشورات</h2>
+    <div class="pfilt" id="pfilt" role="group" aria-label="Filter"></div>
+    <ul class="projects" id="plist"></ul>
+    <button class="btn pmore" id="pmore" type="button" hidden></button>
+  </div></section>
+
   <section><div class="wrap">
     <div class="channel">
       <div class="yt"><i aria-hidden="true"></i><span data-t="ch_title">قناتي على يوتيوب</span></div>
@@ -253,7 +268,28 @@ function render(){
     li.append(el("span","status "+STATUS[p.st],p.tag[lang]),el("h3",null,p.name[lang]),el("p",null,p.d[lang]));ps.append(li);});
   const ch=$("chips");ch.replaceChildren();
   CHIPS[lang].forEach(([s,c])=>ch.append(el("li",c||null,s)));
+  if(typeof renderPosts==="function")renderPosts();
 }
+const PT={ar:{h:"منشورات",all:"الكل",news:"أخبار",story:"قصص",video:"فيديو",humor:"فكاهة",note:"خواطر",src:"المصدر",watch:"مشاهدة",more:"عرض المزيد",m:["يناير","فبراير","مارس","أبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر"]},
+ fr:{h:"Publications",all:"Tout",news:"Actualités",story:"Histoires",video:"Vidéos",humor:"Humour",note:"Notes",src:"Source",watch:"Regarder",more:"Afficher plus",m:["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"]},
+ en:{h:"Posts",all:"All",news:"News",story:"Stories",video:"Videos",humor:"Humour",note:"Notes",src:"Source",watch:"Watch",more:"Show more",m:["January","February","March","April","May","June","July","August","September","October","November","December"]}};
+const PTYPES=["all","news","story","video","humor","note"],PACC={news:"#4fb3a9",story:"#f2a03d",video:"#ff6b6b",humor:"#ffd166",note:"#9b8cff"};
+let POSTS=[],ptype="all",pshow=8;
+function pdate(s){const P=PT[lang],d=s.split("-");return (+d[2])+" "+P.m[+d[1]-1]+" "+d[0];}
+function renderPosts(){
+  const sec=$("posts");if(!POSTS.length){sec.hidden=true;return;}sec.hidden=false;
+  const P=PT[lang];$("posts_h").textContent=P.h;
+  const f=$("pfilt");f.replaceChildren();
+  PTYPES.forEach(k=>{if(k!=="all"&&!POSTS.some(p=>p.type===k))return;const b=el("button",null,P[k]);b.type="button";b.setAttribute("aria-pressed",String(k===ptype));b.onclick=()=>{ptype=k;pshow=8;renderPosts();};f.append(b);});
+  const list=POSTS.filter(p=>ptype==="all"||p.type===ptype),ul=$("plist");ul.replaceChildren();
+  list.slice(0,pshow).forEach(p=>{const li=el("li","proj post");li.style.setProperty("--acc",PACC[p.type]||"#4fb3a9");
+    li.append(el("span","meta",P[p.type]+" · "+pdate(p.date)),el("h3",null,p.title[lang]));
+    String(p.body[lang]).split("\n").filter(x=>x.trim()).forEach(x=>li.append(el("p",null,x)));
+    if(p.url&&/^https:\/\//.test(p.url)){const a=el("a","src",(p.type==="video"?P.watch:P.src+(p.srcName?": "+p.srcName:""))+" ↗");a.href=p.url;a.target="_blank";a.rel="noopener noreferrer";li.append(a);}
+    ul.append(li);});
+  const mb=$("pmore");mb.hidden=list.length<=pshow;mb.textContent=P.more;mb.onclick=()=>{pshow+=8;renderPosts();};
+}
+fetch("data/posts.json").then(r=>r.ok?r.json():[]).then(j=>{POSTS=j.slice().sort((a,b)=>b.date.localeCompare(a.date));renderPosts();}).catch(()=>{});
 document.querySelectorAll(".langs button").forEach(b=>b.onclick=()=>{lang=b.dataset.lang;try{localStorage.setItem("site-lang",lang);}catch(e){}render();});
 
 /* ---------- living sea (bathymetric contours) ---------- */
