@@ -1,4 +1,4 @@
-<!doctype html><html lang="ar" dir="rtl" translate="no" class="notranslate"><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests"><meta name="referrer" content="strict-origin-when-cross-origin"><meta name="google" content="notranslate"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="description" content="كلمة المرور: الطول قبل التعقيد — Le mot de passe : la longueur avant la complexité."><link rel="icon" type="image/png" href="../img/mark.png"><link rel="apple-touch-icon" href="../img/mark.png"><meta property="og:title" content="كلمة المرور: الطول قبل التعقيد · الحضرامي"><meta property="og:description" content="Le mot de passe : la longueur avant la complexité."><meta property="og:image" content="https://www.elhadramy.com/img/logo.png"><meta property="og:url" content="https://www.elhadramy.com/articles/2026-11-16-mot-de-passe.html"><meta property="og:type" content="article"><link rel="canonical" href="https://www.elhadramy.com/articles/2026-11-16-mot-de-passe.html"><title>كلمة المرور: الطول قبل التعقيد · الحضرامي</title>
+<!doctype html><html lang="ar" dir="rtl" translate="no" class="notranslate"><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-SEneppEZEC7djBjvSm/MXZPg4zuXQwr77e3Hjev2C4A='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests"><meta name="referrer" content="strict-origin-when-cross-origin"><meta name="google" content="notranslate"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="description" content="كلمة المرور: الطول قبل التعقيد — Le mot de passe : la longueur avant la complexité."><link rel="icon" type="image/png" href="../img/mark.png"><link rel="apple-touch-icon" href="../img/mark.png"><meta property="og:title" content="كلمة المرور: الطول قبل التعقيد · الحضرامي"><meta property="og:description" content="Le mot de passe : la longueur avant la complexité."><meta property="og:image" content="https://www.elhadramy.com/img/logo.png"><meta property="og:url" content="https://www.elhadramy.com/articles/2026-11-16-mot-de-passe.html"><meta property="og:type" content="article"><link rel="canonical" href="https://www.elhadramy.com/articles/2026-11-16-mot-de-passe.html"><title>كلمة المرور: الطول قبل التعقيد · الحضرامي</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@600;700&family=Readex+Pro:wght@300;400;500&family=Bricolage+Grotesque:opsz,wght@12..96,700&display=swap">
@@ -22,15 +22,27 @@ h1{font-family:"El Messiri","Readex Pro",sans-serif;font-weight:700;font-size:cl
 article[lang="fr"] h1{font-family:"Bricolage Grotesque","Readex Pro",sans-serif;letter-spacing:-.02em;line-height:1.2}
 p{margin:0 0 1.15em;color:#d4e0dd}
 article[lang="fr"]{line-height:1.75}
+.langs{display:flex;gap:2px;background:rgba(0,0,0,.25);border-radius:999px;padding:3px}
+.langs button{font:inherit;font-size:.78rem;font-weight:500;border:0;background:transparent;color:var(--mist);padding:3px 10px;border-radius:999px;cursor:pointer}
+.langs button[aria-pressed="true"]{background:var(--beam);color:var(--abyss)}
+.langs button:focus-visible{outline:2px solid var(--beam);outline-offset:2px}
+[hidden]{display:none!important}
+article[lang="en"] h1{font-family:"Bricolage Grotesque","Readex Pro",sans-serif;letter-spacing:-.02em;line-height:1.2}
+article[lang="en"]{line-height:1.75}
+.jump{display:none}
 .end{margin-top:56px;padding-top:20px;border-top:1px solid var(--rule);color:var(--mist);font-size:.85rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 </style></head><body>
 <div class="wrap">
   <div class="top">
-    <a class="mark" href="../"><img src="../img/mark.png" width="32" height="32" alt=""><span>الحضرامي</span></a>
-    <a class="jump" href="#fr" lang="fr">Version française ↓</a>
+    <a class="mark" href="../"><img src="../img/mark.png" width="32" height="32" alt=""><span id="brand">الحضرامي</span></a>
+    <div class="langs" role="group" aria-label="Language">
+      <button type="button" data-lang="ar" lang="ar" aria-pressed="true">ع</button>
+      <button type="button" data-lang="fr" lang="fr" aria-pressed="false">FR</button>
+      <button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button>
+    </div>
   </div>
 
-  <article lang="ar" dir="rtl">
+  <article data-l="ar" lang="ar" dir="rtl">
     <p class="date">16 نوفمبر 2026</p>
     <h1>كلمة المرور: الطول قبل التعقيد</h1>
     <p>كانت النصيحة الشائعة طوال سنوات أن تكون كلمة المرور خليطًا من حروف كبيرة وصغيرة وأرقام ورموز، وأن تُغيَّر كل بضعة أشهر. غير أن المعهد الوطني الأمريكي للمعايير والتقنية، وهو من أوثق المراجع في هذا الباب، راجع هذه النصيحة في دليله الخاص بالتحقق من الهوية، وانتهى إلى توصيات أبسط وأنفع.</p>
@@ -42,7 +54,7 @@ article[lang="fr"]{line-height:1.75}
     <p>والخلاصة: اختر لكل حساب عبارة طويلة لا يخمّنها غيرك، ولا تكرّرها في حساب آخر، وغيّرها متى شككت في أنها تسرّبت. فحماية المعطيات تبدأ بعادات صغيرة يسيرة.</p>
   </article>
 
-  <article id="fr" lang="fr" dir="ltr">
+  <article data-l="fr" lang="fr" dir="ltr" hidden>
     <p class="date">16 novembre 2026</p>
     <h1>Le mot de passe : la longueur avant la complexité</h1>
     <p>Pendant de longues années, le conseil courant voulait qu'un mot de passe mélange majuscules, minuscules, chiffres et symboles, et qu'il soit changé régulièrement, à quelques mois d'intervalle. Or l'Institut national américain des normes et de la technologie (NIST), l'une des références les plus sûres en la matière, a revu ce conseil dans son guide consacré à l'authentification et en a tiré des recommandations plus simples et plus utiles.</p>
@@ -54,6 +66,36 @@ article[lang="fr"]{line-height:1.75}
     <p>En résumé : choisissez pour chaque compte une longue phrase que personne d'autre ne puisse deviner, ne la réutilisez pas ailleurs, et changez-la dès que vous soupçonnez une fuite. La protection des données commence par de petites habitudes simples.</p>
   </article>
 
-  <div class="end"><a href="../">← الحضرامي · El Hadramy</a><span>© 2026 الحضرامي — نواكشوط، موريتانيا</span></div>
+  <article data-l="en" lang="en" dir="ltr" hidden>
+    <p class="date">16 November 2026</p>
+    <h1>Passwords: length before complexity</h1>
+    <p>For years, the common advice was that a password should mix upper- and lower-case letters, numbers and symbols, and be changed every few months. But the US National Institute of Standards and Technology (NIST), one of the most trusted references in this field, has revised that advice in its guide to authentication and arrived at simpler, more useful recommendations.</p>
+    <p>First: length matters more than complexity. The guide requires at least fifteen characters when the password is the only means of access, and at least eight when it is combined with another authentication factor. It recommends that systems accept passwords of at least sixty-four characters. A long phrase that is easy for you to remember, such as four unrelated words, is harder for an attacker to guess than a short password full of symbols.</p>
+    <p>Second: no imposed composition rules. The guide forbids requiring users to combine letters, numbers and symbols, because this pushes people towards predictable patterns, such as adding a digit or an exclamation mark at the end.</p>
+    <p>Third: no periodic changes without a reason. Forced changes every few months lead people to choose weak passwords in which they change only a single character. However, when there is evidence that a password has been compromised, the guide requires it to be changed.</p>
+    <p>Fourth: a list of blocked passwords. The system must compare each new password against a list of common, predictable or leaked passwords, reject it if it appears there, and tell the user why.</p>
+    <p>Fifth: password managers are welcome. The guide requires systems to allow password managers and autofill, and recommends allowing passwords to be pasted. This helps everyone use a long, different password for every account.</p>
+    <p>In short: choose a long phrase for each account that no one else could guess, do not reuse it elsewhere, and change it as soon as you suspect it has leaked. Protecting your data starts with small, simple habits.</p>
+  </article>
+
+  <div class="end"><a href="../" id="back">العودة إلى الصفحة الرئيسية</a><span id="foot">© 2026 الحضرامي — نواكشوط، موريتانيا</span></div>
 </div>
+<script>(function(){
+const L=["ar","fr","en"];let l="ar";
+try{const s=localStorage.getItem("site-lang");if(L.includes(s))l=s;}catch(e){}
+const B={ar:"الحضرامي",fr:"El Hadramy",en:"El Hadramy"};
+const K={ar:"العودة إلى الصفحة الرئيسية",fr:"Retour à l’accueil",en:"Back to the home page"};
+const F={ar:"© 2026 الحضرامي — نواكشوط، موريتانيا",fr:"© 2026 El Hadramy — Nouakchott, Mauritanie",en:"© 2026 El Hadramy — Nouakchott, Mauritania"};
+function r(){
+  const d=document.documentElement;d.lang=l;d.dir=l==="ar"?"rtl":"ltr";
+  document.querySelectorAll("article[data-l]").forEach(a=>{a.hidden=a.dataset.l!==l;});
+  document.querySelectorAll(".langs button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.lang===l)));
+  document.title=document.querySelector('article[data-l="'+l+'"] h1').textContent+" · "+B[l];
+  document.getElementById("brand").textContent=B[l];
+  document.getElementById("back").textContent=K[l];
+  document.getElementById("foot").textContent=F[l];
+}
+document.querySelectorAll(".langs button").forEach(b=>b.onclick=()=>{l=b.dataset.lang;try{localStorage.setItem("site-lang",l);}catch(e){}r();});
+r();
+})();</script>
 </body></html>
