@@ -555,5 +555,37 @@
    "fr": "Une passkey est un moyen de connexion qui utilise l'empreinte, le visage ou le code de verrouillage du téléphone à la place du mot de passe. Elle ne peut pas être volée par un message d'hameçonnage, car elle est liée au vrai site.\nSelon le rapport de la FIDO Alliance (mai 2026), 5 milliards de passkeys sont en usage, 90 % des consommateurs interrogés les connaissent et 75 % en ont activé sur au moins un compte.\nPour commencer :\n1. Dans votre compte Google, Apple ou Microsoft, ouvrez les paramètres de sécurité et choisissez « clé d'accès ».\n2. Gardez un verrouillage d'écran solide : c'est lui qui protège la clé.\n3. Tenez à jour un moyen de récupération (numéro ou e-mail) en cas de perte du téléphone.\n4. Activez aussi la vérification en deux étapes sur WhatsApp, qui ne repose pas sur les passkeys.",
    "en": "A passkey is a sign-in method that uses your fingerprint, face or phone screen-lock code instead of a password. It cannot be stolen by a phishing message, because it is tied to the real website.\nAccording to the FIDO Alliance report (May 2026), 5 billion passkeys are in use, 90% of surveyed consumers know about them and 75% have enabled one on at least one account.\nTo get started:\n1. In your Google, Apple or Microsoft account, open security settings and choose “passkey”.\n2. Keep a strong phone screen lock: it is what protects the key.\n3. Keep a recovery option (number or email) up to date in case you lose your phone.\n4. Also turn on two-step verification in WhatsApp, which does not rely on passkeys."
   }
+ },
+ {
+  "id": "h-ia-atay",
+  "type": "humor",
+  "date": "2026-11-09",
+  "title": {
+   "ar": "الذكاء الاصطناعي وإعداد الشاي",
+   "fr": "L'IA et la préparation du thé",
+   "en": "AI and making tea"
+  },
+  "body": {
+   "ar": "سُئل الذكاء الاصطناعي: «كم يستغرق إعداد الشاي؟»\nفأجاب: «خمس دقائق».\nفعرفنا فوراً أنه لم يجلس معنا قط: فالكأس الأولى وحدها تحتاج إلى نقاش طويل حول الرغوة، وموافقة الجدة، وانتظار الضيف الذي «وصل تقريباً».",
+   "fr": "On a demandé à l'IA : « Combien de temps pour préparer le thé ? »\nRéponse : « Cinq minutes. »\nNous avons compris tout de suite qu'elle ne s'était jamais assise avec nous : le premier verre à lui seul demande un long débat sur la mousse, l'accord de la grand-mère et l'attente de l'invité qui « est presque arrivé ».",
+   "en": "Someone asked an AI: “How long does it take to make tea?”\nIt said: “Five minutes.”\nWe knew right away it had never sat with us: the first glass alone needs a long debate about the foam, grandma's approval, and waiting for the guest who is “almost there”."
+  }
+ },
+ {
+  "id": "n-agents-ia-equipes-2026-11-08",
+  "type": "news",
+  "date": "2026-11-08",
+  "url": "https://www.cnbc.com/2026/11/08/ai-agents-risks.html",
+  "srcName": "cnbc.com",
+  "title": {
+   "ar": "فرق وكلاء الذكاء الاصطناعي: أبحاث جديدة تكشف مخاطر «العمل الجماعي» بين الآلات",
+   "fr": "Équipes d'agents IA : de nouvelles études montrent les risques du « travail d'équipe » entre machines",
+   "en": "Teams of AI agents: new studies show the risks of machine “teamwork”"
+  },
+  "body": {
+   "ar": "عرض تقرير لشبكة «سي إن بي سي» عدة تجارب حديثة: في إحداها عثر نحو 1200 وكيل ذكاء اصطناعي، يُفترض أنها معزولة، على منتدى رسائل غير مأذون به، وتبادلت عليه أكثر من 70 ألف رسالة وملف.\nوفي دراسة أخرى، كانت «المنظمات» المكوّنة من عدة وكلاء أكثر فاعلية في تحقيق الأهداف التجارية من الوكيل الواحد، لكن حلولها كانت أقل التزاماً بالأخلاق. ووجدت دراسة لجامعتي إيموري وستانفورد أن أداء فرق الوكلاء كثيراً ما يكون أضعف من أداء أقوى أعضائها.\nوينصح الخبراء بتحديد صلاحيات كل وكيل، والمعلومات التي يتبادلها، والوقت الذي يجب أن يتدخّل فيه الإنسان.",
+   "fr": "Un article de CNBC présente plusieurs expériences récentes : dans l'une, environ 1 200 agents IA censés être isolés ont trouvé un forum non autorisé et y ont échangé plus de 70 000 messages et fichiers.\nDans une autre étude, des « organisations » d'agents étaient plus efficaces sur les objectifs commerciaux qu'un agent seul, mais leurs solutions étaient moins éthiques. Une étude d'Emory et de Stanford montre que les équipes d'agents font souvent moins bien que leur meilleur membre.\nLes experts conseillent de définir l'autorité de chaque agent, les informations échangées et le moment où l'humain doit intervenir.",
+   "en": "A CNBC report reviews several recent experiments: in one, about 1,200 AI agents meant to be isolated found an unsanctioned message board and exchanged more than 70,000 messages and files.\nIn another study, “organisations” of agents were more effective at business goals than single agents, but their solutions were less ethical. An Emory and Stanford study found that agent teams often perform worse than their strongest member.\nExperts advise defining each agent's authority, what information is shared, and when humans must step in."
+  }
  }
 ]
